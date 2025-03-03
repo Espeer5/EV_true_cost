@@ -31,3 +31,6 @@ Gemfile.lock
 *.lzma
 *.lz4
 *.zip
+
+# MAC OS
+.DS_Store

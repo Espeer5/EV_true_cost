@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The True Cost of Electric Vehicles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>The True Cost of Electric Vehicles</h1>
+            <p>By Sulekha Kishore, Anagha Satish, and Edward Speer</p>
+            <div class="header_accent"></div>
+        </header>
+        
+        <main>
+            <section>
+                <img src="imgs/rise_plot.png" alt="A graph of rising global EV sales">
+            </section>
+            <section>
+                <p>
+                    Electric vehicles (EVs) have seen massive increases in
+                    sales, news coverage, political importance, and regulatory
+                    attention as the worrying effects of climate change due to
+                    CO2 emissions become abundantly clear. Adoption of this
+                    “green” alternative to traditional internal combustion
+                    engine (ICE) vehicles is sold as the most climate-friendly
+                    option. However, there are hidden aspects of the production
+                    process of the lithium-ion batteries required for EVs and
+                    the carbon emissions of the energy generation methods that
+                    power EVs. In an effort to understand the full social and
+                    environmental impact of the electrification of
+                    transportation, we have conducted an investigative data
+                    analysis to determine the true cost of electric vehicles,
+                    compare that cost to the cost of ICE vehicles, and explore
+                    strategies for charging consumers the true cost of their
+                    transportation choices.
+                </p>
+                <p class="indented">
+                    In this article, we will build up the true cost of EVs by
+                    exploring the different components that contribute to the
+                    social and environmental costs of EVs. We will first
+                    investigate the human labor and mining costs of cobalt, the
+                    primary mineral used in lithium-ion batteries. To determine
+                    the human costs, we will look at the direct and downstream
+                    costs of labor of mineral/metal mining for batteries
+                    required in electric vehicles as compared to those for ICE
+                    cars. We will then investigate the carbon emissions of the
+                    energy generation methods that power EVs and compare them
+                    to the carbon emissions of burning gasoline. Finally, we
+                    will explore strategies for charging consumers the true
+                    cost of their transportation choices, including direct
+                    intervention on vehicle sticker prices as well as cumulative
+                    carbon tax policies.
+                </p>
+            </section>
+            <section>
+                <h2>Drilling Down Deep</h2>
+                <img src="imgs/cobalt.jpg" alt="Cobalt Mineral">
+                <p>
+                    We will first investigate the human labor and mining costs
+                    of cobalt, the primary mineral used in lithium-ion
+                    batteries. To determine the human costs, we will look at the
+                    direct and downstream costs of labor of mineral/metal mining
+                    for batteries required in electric vehicles as compared to
+                    those for ICE cars. 
+                </p>
+                <p class="indented">
+                    Cobalt is a silverly-blue mineral...
+                </p>
+            </section>
+            <section>
+                <h2>The Cost of Carbon Emissions</h2>
+                <p>
+                    CO2 emissions are the primary environmental concern for the
+                    transportation industry. ICE vehicles have long been 
+                    criticized for their high carbon emissions due to the direct
+                    burning of gasoline. However, the carbon emissions of the
+                    energy generation methods that power EVs are often ignored.
+                </p>
+                <p class="indented">
+                    In order to dig deeper into the climate impact of EVs, we
+                    first assesed the current state of the energy generation
+                    methods used to power EVs in the United States. Drawing on
+                    the data available from the EPA's Emissions & Generation
+                    Resource Integrated Database (eGRID), we calculated the
+                    carbon emissions per kWh of electricity generated in the
+                    United States, as well as the potential emissions for a
+                    range of different energy generation scenarios. We then used
+                    this data to calculate the average carbon emitted per mile
+                    driven by an EV in the U.S based on the average energy
+                    efficiency of EVs sold in the U.S, and multiplied by the
+                    <a href="https://country-level-scc.github.io/explorer/">social cost of carbon</a>
+                    to obtain an estimate of the cost of carbon emissions per
+                    mile driven by an EV. This value may be compared with an
+                    estimate of the cost of carbon emissions per mile driven by
+                    an ICE vehicle, obtained by multiplying the average fuel
+                    efficiency of ICE vehicles sold in the U.S by the social
+                    cost of carbon.
+                </p>
+                <p class="indented">
+                    The results of this analysis may be seen through the
+                    interactive plot below. The plot shows the cost of carbon,
+                    in cents per mile, broken up by both EV/ICE, as well as per
+                    energy source used to power EVs. Use the sliders at the
+                    bottom to adjust the energy generation mix and the
+                    percentage of EVs on the road to see how the cost of carbon
+                    changes. Use the checkboxes in the energy sources legend
+                    to toggle the inclusion or exclusion of different energy
+                    sources in the computation. The plot is initialized with the
+                    current energy generation mix and the current percentage of
+                    EVs on the road in the U.S.
+                </p>
+                <div id="sneaky">
+                    <iframe id="p5" src="https://editor.p5js.org/Espeer5/full/EuKv-agj8" frameBorder="0"></iframe>
+                </div>
+                <p class="indented">
+                    The result of this comparison is clear. EVs are not only 
+                    vastly more environmentally friendly than ICE vehicles, but
+                    they also have the potential to continue to improve in
+                    environmental impact as the energy generation mix in the
+                    U.S is shifted towards renewable energy source. Notice that
+                    well over 75% of the cost of carbon emissions for EVs comes
+                    from the burning of coal. Quick maths reveal that over the
+                    span of 100,000 miles, the current carbon costs of an EV
+                    are just of $12,000, while the carbon costs of an ICE over
+                    the same distance amount to over $750,000 — well over an
+                    order of magnitude difference.
+                </p>
+            </section>
+            <section>
+                <h2>Citations</h2>
+                <ol>
+                    <li>
+                        IEA (2024), Global EV Outlook 2024, IEA, Paris. 
+                        <a href=https://www.iea.org/reports/global-ev-outlook-2024>URL</a> 
+                        Licence: CC BY 4.0
+                    </li>
+                    <li>
+                        U.S Environmental Protection Agency. (2023).
+                        Emissions & Generation Resource Integrated Database
+                        (eGRID).
+                        <a href="https://www.epa.gov/egrid/detailed-data">URL</a>
+                        Licence: MIT
+                    </li>
+                    <li>
+                        K. Ricke, L. Drouet, K. Caldeira and M. Tavoni,
+                        Country-level Social Cost of Carbon, Nature Climate
+                        Change. DOI: 10.1038/s41558-018-0282-y
+                    </li>
+                </ol>
+            </section>
+            <div class="content-pad"></div>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="fixed-bar">
+            <img src="imgs/logo.png" alt="Logo" class="logo">
+            <a href="https://github.com/Espeer5/EV_true_cost?tab=GPL-3.0-1-ov-file#readme" class="license">GPL-3.0 Public License</a>
+            <div class="footer_accent"></div>
+        </div>
+    </footer>
+</body>
+</html>
