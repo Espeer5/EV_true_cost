@@ -16,3 +16,18 @@ _site/
 # counterproductive to check this file into the repository.
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
+
+# Julia local manifest
+*Manifest.toml
+
+# Notebook artifacts
+.ipynb_checkpoints
+
+# Compressed data artifacts
+*.gz
+*.bz2
+*.xz
+*.zst
+*.lzma
+*.lz4
+*.zip
