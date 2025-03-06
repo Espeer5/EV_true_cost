@@ -17,7 +17,8 @@
     <div class="content">
         <header>
             <h1>The True Cost of Electric Vehicles</h1>
-            <p>By Sulekha Kishore, Anagha Satish, and Edward Speer</p>
+            <h3>By Sulekha Kishore, Anagha Satish, and Edward Speer</h3>
+            <p>March 4, 2025</p>
             <div class="header_accent"></div>
         </header>
         
@@ -74,7 +75,61 @@
                     those for ICE cars. 
                 </p>
                 <p class="indented">
-                    Cobalt is a silverly-blue mineral...
+                    The most important component of an EV is its battery.
+                    However, the materials required for these batteries come
+                    with a cost. 60% of the world’s Cobalt comes from the
+                    Democratic Republic of the Congo, where there are constant
+                    questions of worker abuse, human rights abuse, and child
+                    labor. We note that the majority of workers in the Congolese
+                    mines are indirect hires rather than direct hires, meaning
+                    that they are not afforded the same benefits and
+                    protections. We further analyze what it would cost to pay
+                    these workers a fair wage.
+                </p>
+                <img src="imgs/Mine_Workers.png" alt="Mine worker type vs benefits">
+                <p>
+                    The difference in the number of indirect hires vs. direct
+                    hires in the Congolese mines is stark. Based on the following
+                    data, we can see that the majority of workers in the
+                    Congolese mines are indirect hires, meaning that indirect
+                    hiring is a route used to circumnavigate paying workers the
+                    benefits they deserve.
+                </p>
+                <img src="imgs/Mine_Workers_graph.png" alt="Graph of mine worker type vs benefits">
+                <p>TODO: Cost of fair wages</p>
+                <p class="indented">
+                    Mining for batteries also pose a deep threat for the
+                    surrounding environment, which in turn affects its
+                    inhabitants. Mining raw materials requires harsh chemicals
+                    and large amounts of water, often in areas where water is
+                    already scarce. Additionally, heat between 800 and 1,000C is
+                    needed, which requires the burning of fossil fuels.
+                    These harms posed to the water supply and environment hurt
+                    the agricultural industry nearby.  In an article in the
+                    National Library of Medicine, researchers talk to farmers in
+                    the Katangese Copperbelt in Central Africa, noting their
+                    struggle to obtain compensation for the costs of nearby
+                    mining. In this area, many farmers note the decrease in
+                    water quality. Specifically, between 2013 and 2014, they
+                    note the death of fish in the nearby river, and increased
+                    crop failure. The polluters have not responded to these
+                    concerns, however, 88% of the farmers interviewed voiced a
+                    need for the depollution of their area. They further state
+                    that they would accept, if offered, a compensation of $US
+                    2820 per farmer. 
+                </p>
+                <p class="indented">
+                    Outside of the human costs of mining cobalt, there are also
+                    associated environmental costs. For example, the Tesla Model
+                    3 holds an 80 kWh lithium-ion battery. Research[?] concludes
+                    that mining the materials for this battery would result in
+                    between 2,400kg and 16,000kg of CO2 emissions. This is
+                    between 1.5 and 1.6 metric tons. For context, one ton of CO2
+                    is about the amount that a typical gas-powered car emits in
+                    about 2,500 miles of driving. Using the social cost of
+                    carbon, which we will explore below in the context of
+                    electricity generation, we can estimate the cost of these
+                    emissions to be around $295.
                 </p>
             </section>
             <section>
@@ -115,14 +170,13 @@
                     in an increase in the cost of carbon emissions per mile
                     for the EVs already on the roads.
                     
-                    This value may be compared
-                    with an estimate of the cost of carbon emissions per mile
-                    driven by an ICE vehicle, obtained by multiplying the
-                    average fuel efficiency of ICE vehicles sold in the U.S by
-                    the social cost of carbon.
-                    \[C_{ICE} = SCC * \mu\]
-                    where \(\mu\) is the average fuel efficiency of ICE vehicles
-                    sold in the U.S.
+                    This value may be compared with an estimate of the cost of
+                    carbon emissions per mile driven by an ICE vehicle, obtained
+                    by multiplying the average fuel efficiency of ICE vehicles
+                    sold in the U.S by the social cost of carbon:
+                    \[C_{ICE} = SCC * \bar{\mu}\]
+                    where \(\bar{\mu}\) is the average fuel efficiency of ICE
+                    vehicles sold in the U.S.
                 </p>
                 <p class="indented">
                     The results of this analysis may be seen through the
@@ -191,7 +245,40 @@
                 <p>
                     The simplest way to charge consumers the true cost of their
                     transportation choices is to directly intervene on vehicle
-                    sticker prices. ...
+                    sticker prices. The sticker price will need to reflect all 
+                    relevant costs incurred during production and in ongoing
+                    costs, so that the vehicle should be priced with respect to
+                    expected emissions over the lifetime of the vehicle. Note
+                    that this estimate will be imperfect — fuel efficiency often
+                    declines as a vehicle ages — however, it is an adequate
+                    first approximation.
+                </p>
+                <p class="indented">
+                    On this approach, then, the sticker price is 
+                    \[P_{EV}=B_{EV} + \bar{L} * C_{EV}\]
+                    where \(B_{EV}\) is the base price of the vehicle including
+                    labor and emissions in production, \(\bar{L}\) is the
+                    expected lifetime of the vehicle in miles, and \(C_{EV}\) is
+                    the cost of carbon emissions per mile driven by an EV. The
+                    sticker price of an ICE vehicle would be calculated in a
+                    similar manner, with the base price and price of emissions
+                    replaced with the base price and cost of carbon emissions
+                    per mile driven by an ICE vehicle, respectively. Note that
+                    \(\bar{C}\) is a dynamic value that would change as the
+                    mixture of energy generation sources in the U.S changes.
+                </p>
+                <p>TODO: PLOT OF PRICE TO COST WITH LABOR DATA</p>
+                <p>
+                    Notice that this approach has both benefits and
+                    disadvantages. The primary benefit of this approach is that
+                    consumers would face string incentives to purchase more
+                    responsible vehicles right up front, hopefully driving the
+                    market towards more sustainable vehicles rapidly when this
+                    policy is first implemented. However, the primary
+                    disadvantage is that this approach does not account for the
+                    ongoing costs of operating the vehicle — some consumers will
+                    be overcharged while others are undercharged, depending on
+                    their driving habits and the lifetime of the vehicle.
                 </p>
                 <h3>Scenario 2: Cumulative Dynamic Taxes</h3>
                 <p>
@@ -199,8 +286,35 @@
                     charge consumers the true cost of their transportation
                     choices is to intervene at two points in the vehicle
                     lifecycle: at the point of purchase, and at the point of
-                    fueling. ...
+                    fueling. On this approach, consumers are charged the base
+                    price for their vehicle including the approapriate labor and
+                    emission prices in production, and then are charged a
+                    tax at the point of sale for fueling the vehicle. This tax
+                    would be dynamic for electric vehicles, changing as the
+                    energy generation mix in the U.S changes — but static for
+                    ICE vehicles, as the environmental impact of burning
+                    gasoline remains stable.
                 </p>
+                <p>TODO: PLOT SHOWING PRICE TO COST WITH LABOR DATA</p>
+                <p class="indented">
+                    This strategy again has a number of benefits and
+                    disadvantages. The primary benefit of this approach is that
+                    it accounts for the ongoing costs of operating the vehicle,
+                    ensuring that consumers are charged the true cost of their
+                    transportation choices over the lifetime of the vehicle.
+                    Along with this benefit, the tax on fueling the vehicle
+                    is directly sensitive to the energy generation mix in the
+                    U.S, meaning that consumers will begin to push for political
+                    and corporate shifts towards sustainable energy sources to
+                    reduce their own costs. However, the primary disadvantage of
+                    this approach is that there is much less benefit for
+                    consumers at the point of sale of the vehicle to select for
+                    electric. This could slow the adoption of electric vehicles
+                    in the short term, as consumers are less incentivized to
+                    purchase electric vehicles right up front if they are
+                    unaware of the long-term benefit of doing so.
+                </p>
+                <p>TODO: GRAPHIC SHOWING FINAL COMPARISON WITH LABOR DATA</p>
             </section>
             <section>
                 <h2>Citations</h2>
