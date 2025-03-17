@@ -24,7 +24,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px 0;
+    margin: 0 auto;
 }
 
 .content-pad {
@@ -100,7 +100,7 @@ img {
 
 .sneaky2 {
     width: 100%;
-    height: 355px;
+    height: 362px;
     overflow: hidden;
 }
 
@@ -116,25 +116,39 @@ img {
     position: relative;
     top:-50px;
     width: 100%;
-    height:355px;
+    height:362px;
     overflow: auto;
 }
 
-ol {
+#cites {
     list-style: none;
     counter-reset: list-counter;
     padding-left: 0;
 }
 
-ol li {
+#cites li {
     counter-increment: list-counter;
     padding-left: 2em;
 } 
 
-ol li::before {
+#cites li::before {
     content: "[" counter(list-counter) "] ";
     display: inline-block;
     width: 2em;
+}
+
+.critical {
+    text-align: center;
+    font-weight: bold;
+}
+
+.caption {
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 0.7em;
 }
 
 .indented {

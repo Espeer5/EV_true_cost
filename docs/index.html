@@ -18,96 +18,474 @@
         <header>
             <h1>The True Cost of Electric Vehicles</h1>
             <h3>By Sulekha Kishore, Anagha Satish, and Edward Speer</h3>
-            <p>March 4, 2025</p>
+            <p>CS/IDS/VC 162, WI '25</p>
             <div class="header_accent"></div>
         </header>
         
         <main>
             <section>
                 <img src="imgs/rise_plot.png" alt="A graph of rising global EV sales">
+                <p class="caption">
+                    <em>
+                        The exponential rise in U.S. EV registrations in the
+                        last decade. Source: IEA Global EV Outlook 2024 [1]
+                    </em>
+                </p>
             </section>
             <section>
                 <p>
                     Electric vehicles (EVs) have seen massive increases in
                     sales, news coverage, political importance, and regulatory
-                    attention as the worrying effects of climate change due to
-                    CO2 emissions become abundantly clear. Adoption of this
-                    “green” alternative to traditional internal combustion
-                    engine (ICE) vehicles is sold as the most climate-friendly
-                    option. However, there are hidden aspects of the production
+                    attention in the last decade as the worrying effects of
+                    climate change due to \(CO_2\) emissions become abundantly
+                    clear. Adoption of this “green” alternative to traditional
+                    internal combustion engine (ICE) vehicles is touted as the
+                    most climate-friendly option. However, there are hidden
+                    costs to people and the environment in the production
                     process of the lithium-ion batteries required for EVs and
-                    the carbon emissions of the energy generation methods that
-                    power EVs. In an effort to understand the full social and
-                    environmental impact of the electrification of
-                    transportation, we have conducted an investigative data
-                    analysis to determine the true cost of electric vehicles,
-                    compare that cost to the cost of ICE vehicles, and explore
-                    strategies for charging consumers the true cost of their
-                    transportation choices.
+                    in the carbon emissions of the energy generation methods
+                    that power EVs. In an effort to understand the full social
+                    and environmental impact of the electrification of
+                    transportation, we conducted an investigative data analysis
+                    to determine the true cost of electric vehicles, compare EV
+                    costs to the cost of ICE vehicles, and explore strategies
+                    for charging consumers the true cost of their transportation
+                    choices.
                 </p>
                 <p class="indented">
                     In this article, we will build up the true cost of EVs by
                     exploring the different components that contribute to the
-                    social and environmental costs of EVs. We will first
-                    investigate the human labor and mining costs of cobalt, the
-                    primary mineral used in lithium-ion batteries. To determine
-                    the human costs, we will look at the direct and downstream
-                    costs of labor of mineral/metal mining for batteries
-                    required in electric vehicles as compared to those for ICE
-                    cars. We will then investigate the carbon emissions of the
-                    energy generation methods that power EVs and compare them
-                    to the carbon emissions of burning gasoline. Finally, we
-                    will explore strategies for charging consumers the true
-                    cost of their transportation choices, including direct
-                    intervention on vehicle sticker prices as well as cumulative
-                    carbon tax policies.
+                    social and environmental costs of EVs. We seek to answer,
                 </p>
-            </section>
-            <section>
-                <h2>Drilling Down Deep</h2>
-                <img src="imgs/cobalt.jpg" alt="Cobalt Mineral">
-                <p>
+                <p class="critical">
+                    <em>
+                        “What if we priced internal combustion engine and electric
+                        vehicles to include all social (mining & labor) and
+                        environmental costs?”
+                    </em>
+                </p>
+                <p class="indented">
                     We will first investigate the human labor and mining costs
                     of cobalt, the primary mineral used in lithium-ion
                     batteries. To determine the human costs, we will look at the
                     direct and downstream costs of labor of mineral/metal mining
                     for batteries required in electric vehicles as compared to
-                    those for ICE cars. 
+                    those for ICE cars. We will then investigate the carbon
+                    emissions of the energy generation methods that power EVs
+                    and compare them to the carbon emissions of burning
+                    gasoline. Finally, we will explore strategies for charging
+                    consumers the true cost of their transportation choices,
+                    including direct intervention on vehicle sticker prices as
+                    well as cumulative carbon tax policies.
+                </p>
+            </section>
+            <section>
+                <h2>Drilling Down Deep</h2>
+                <p>
+                    While electronic devices — phones, laptops, and yes, EVs —
+                    are symbols of modern technology, the rechargeable batteries
+                    they rely on are built on the backs of an exploitative
+                    system for labor. We first investigate the human labor and
+                    mining costs of cobalt, the primary mineral used in
+                    lithium-ion batteries. To determine the human costs, we will
+                    look at the direct and downstream costs of labor of mineral
+                    and metal mining for batteries required in electric vehicles
+                    as compared to those for ICE cars. 
+                </p>
+                <img src="imgs/cobalt.jpg" alt="Cobalt Mineral">
+                <p class="caption">
+                    <em>
+                        This shiny metal, cobalt, is at the core of the rise in
+                        demand for lithium-ion batteries. Pictured above: Pure
+                        (99.9 %) cobalt chips, electrolytically refined, as well
+                        as a high purity (99.8 % = 2N8) 1 cm3 cobalt cube for
+                        comparison. Credit: Heinrich Pniok
+                    </em>
                 </p>
                 <p class="indented">
-                    The most important component of an EV is its battery.
-                    However, the materials required for these batteries come
-                    with a cost. 60% of the world’s Cobalt comes from the
-                    Democratic Republic of the Congo, where there are constant
-                    questions of worker abuse, human rights abuse, and child
-                    labor. We note that the majority of workers in the Congolese
-                    mines are indirect hires rather than direct hires, meaning
-                    that they are not afforded the same benefits and
-                    protections. We further analyze what it would cost to pay
-                    these workers a fair wage.
+                    The most important component of an EV is its battery and
+                    cobalt is one of the three principle minerals used in the
+                    manufacturing of all lithium ion rechargeable batteries.
+                    60% of the world’s cobalt comes from the Democratic Republic
+                    of the Congo (DRC), a country in Central Africa. The DRC has
+                    seen a massive boom in industrial mining in the past decade
+                    as billions of dollars from multinational corporations have
+                    streamed into the country as the financial profits of cobalt
+                    mining became increasingly evident. Today, the majority of
+                    mining companies in the DRC are Chinese, following a 2009
+                    agreement signed by then-President Joseph Kabila. This deal
+                    granted the Chinese government access to the country's
+                    copper-cobalt mines in exchange for billions of dollars in
+                    aid, loans, and infrastructure projects. As a result,
+                    Chinese state-owned and state-backed companies now control
+                    70% of the DRC’s mining sector [5].
+                </p>
+                <p class="indented">
+                    Numerous independent investigations by both Congolese and
+                    international organizations have highlighted the dire
+                    conditions and exploitative labor practices in cobalt mines.
+                    These reports extensively document cases of worker
+                    mistreatment, human rights violations, and child labor
+                    within these mining operations [4]. 
+                </p>
+                <img src="imgs/mines1.jpeg" alt="congolese cobalt mine worker">
+                <p class="caption">
+                    <em>
+                        While the final product, a lithium-ion battery may seem
+                        innocuous, this product is the result hundreds of
+                        thousands of workers laboring in extremely dangerous
+                        environment. Picture: An artisanal miner carries a sack
+                        of ore at the Shabara artisanal mine near Kolwezi, DRC,
+                        on Oct. 12, 2022. Image Credit: Junior Kannah/AFP via
+                        Getty Images
+                    </em>
+                </p>
+                <h2>Cobalt Mining: An Exploitative Labor System</h2>
+                <p>
+                    We focus on the data presented in the November 2021 report
+                    “The Road to Ruin? Electric Vehicles and Workers’ Rights
+                    Abuses at DR Congo’s industrial cobalt mines,” written by
+                    Rights and Accountability in Development (RAID), a UK-based
+                    NGO “exposing corporate wrongdoing, environmental harm and
+                    human rights abuse.” In partnership with Centre d’Aide
+                    Juridico-Judiciaire (CAJJ), a Congolese legal aid centre
+                    specialized in labor rights, this report was the result of
+                    over 2 years of investigation and 130 interviews with
+                    current and former workers at 5 industrial mines in the DRC [9]. 
+                </p>
+                <img src="imgs/mines2.jpeg" alt="Congolese artisanal cobalt mine">
+                <p class="caption">
+                    <em>
+                        Some 20,000 people work at Shabara artisanal mine in the
+                        DRC, in shifts of 5,000 at a time. Image Credit: Junior
+                        Kannah/AFP via Getty Images
+                    </em>
+                </p>
+                <p class="indented">
+                    In 2020, these 5 mines produced “approximately 40-45% of the
+                    global supply of cobalt, much of it destined for the world’s
+                    automotive manufacturers” (p 17). These mines are all owned
+                    or operated by multinational mining companies,
+                    <ol>
+                        <li>Glencore’s Kamoto Copper Company (KCC)</li>
+                        <li>Eurasian Resources Group’s Metalkol RTR</li>
+                        <li>China Molybdenum’s Tenke Fungurume Mining (TFM)</li>
+                        <li>China Nonferrous Metal Mining Company (CNMC)’s
+                            Société Minière de Deziwa (Somidez), in which the
+                            Congolese state company Gécamines holds a 49% stake
+                        <li>Sino-Congolaise des Mines (Sicomines), a joint
+                            venture between Gécamines and a consortium of
+                            Chinese companies and investors.</li>
+                    </ol>
+                </p>
+                <h3>The Subcontracting Model</h3>
+                <p>
+                    With a focus on these five largest industrial cobalt mines
+                    discussed in the RAID report, we investigate the cost of
+                    paying workers in DRC a living wage. The report documents
+                    that currently, many workers do not earn a living wage,
+                    “have little or no health provisions, and far too often are
+                    subjected to excessive working hours, unsafe working
+                    conditions, degrading treatment, discrimination and racism”
+                    (p 3). The exploitation of workers stems largely from the
+                    subcontracting model used by multinational mining companies.
+                    Instead of hiring directly, they rely on indirect hires
+                    through subcontractor companies to source their labor, from
+                    miners to support staff. The RAID report’s interviews with
+                    workers and managers suggest this model is designed to cut
+                    costs, limit liability, and restrict unionization.
+                </p>
+                <p class="indented">
+                    This system of subcontracted labor creates a system in which
+                    the majority of workers in the DRC are not afforded a steady
+                    income, benefits such as time off or health, nor protections
+                    of their labor rights.
                 </p>
                 <img src="imgs/Mine_Workers.png" alt="Mine worker type vs benefits">
+                <p class="caption">
+                    <em>
+                        There are two umbrellas of types of workers,direct and
+                        indirect hire. Indirectly hired workers are further
+                        broken down into temporary and daily workers, with
+                        further diminished rights and wages.
+                    </em>
+                </p>
                 <p>
-                    The difference in the number of indirect hires vs. direct
-                    hires in the Congolese mines is stark. Based on the following
-                    data, we can see that the majority of workers in the
-                    Congolese mines are indirect hires, meaning that indirect
-                    hiring is a route used to circumnavigate paying workers the
-                    benefits they deserve.
+                    While subcontracting is standard for short-term or
+                    specialized roles, evidence suggests mining companies in
+                    Congo rely on it for core operations, paying extremely low
+                    wages. The legal minimum wage in the DRC is 7,075 Congolese
+                    Francs per day or 172,630 per month. While most directly
+                    employed workers at KCC, Metalkol, Sicomines, and TFM earn
+                    above a living wage, Somidez employees reported an average
+                    monthly salary of just $355. However, workers hired through
+                    subcontractors fare worse, earning an average of
+                    $330.10—well below the $402 monthly living wage estimated
+                    for the Kolwezi area, the primary location of cobalt mining
+                    in the DRC. This living wage estimate by the RAID report
+                    used the Minimum Expenditure Basket (MEB) methodology
+                    developed by humanitarian agencies to assess the basic needs
+                    of populations in emergencies. The MEB identifies the
+                    monetary requirements to meet basic needs of a household on
+                    a regular or seasonal basis and their average costs.
+                </p>
+                <img src="imgs/worker_pie.png" alt="Pie chart of mine worker type">
+                <p class="caption">
+                    <em>
+                        Overall, the majority of workers (57%) are indirect
+                        hires, who are routinely paid less for their labor with
+                        little job security, benefits, nor healthcare. 
+                    </em>
+                </p>
+                <p class="indented">
+                    Using data from the RAID report, at least 26,455 workers are
+                    employed at the 5 mines of interest, with 57% hired through
+                    subcontractors (categorized as indirect hires) —rising to
+                    68% at TFM and 64% at Metalkol in 2020. This means that more
+                    than half of the workers at these mines are at the mercy of
+                    the subcontracting firms to find work and “are generally
+                    poorly paid, undertake physically punishing work for long
+                    shifts, receive minimal healthcare coverage with limited or
+                    no cover for their families (despite it being required by
+                    Congolese law) and are frequently denied their entitlement
+                    to paid leave” (p 26). Moreover, these workers have no
+                    rights to time off and are routinely paid less than direct
+                    hire employees. 
+                </p>
+                <p class="indented">
+                    TODO: Sulekha?
                 </p>
                 <img src="imgs/Mine_Workers_graph.png" alt="Graph of mine worker type vs benefits">
-                <p>TODO: Cost of fair wages</p>
+                <h3>Paying a Living Wage</h3>
+                <p>
+                    We will now calculate the cost of paying all mining workers
+                    in the DRC. In the DRC, the maximum working week is capped
+                    at 45 hours, as stipulated by the Congolese Labour Code
+                    (art. 119). Any work done outside these hours is considered
+                    overtime and must be compensated at a higher rate. In the
+                    mining sector, however, many workers, especially
+                    subcontracted ones, work longer hours and are not granted
+                    any form of overtime pay. For example, workers on a typical
+                    “6-3” schedule—working 9am to 9pm for three days, then 4am
+                    to 4pm for three days, followed by three days off—exceeding
+                    the standard 45-hour week. For the purposes of our
+                    calculations, we will assume subcontracted workers work 56
+                    hours per week with no overtime compensation. In contrast,
+                    direct hire workers will be assumed to work only 45 hours
+                    per week.
+                    <ul>
+                        <li>
+                            Direct Hire Workers: Using the minimum “living wage” of
+                            $402 per month in the Kolwezi area, as calculated by
+                            RAID and CAJJ using an internationally recognised
+                            methodology, Let's consider a direct hire worker earning
+                            $402 per month. Assuming they work a full 45-hour week:
+                            <ul>
+                                <li>
+                                    Annual salary: $402 \(*\) 12 months = $4,824
+                                </li>
+                                <li>
+                                    Annual hours worked: 45 hours/week \(*\) 52
+                                    weeks/year = 2,340 hours/year
+                                </li>
+                                <li>
+                                    Hourly wage: $4,824 / 2,340 hours = $2.06/hour
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Indirect Hire Workers: Subcontracted workers, however,
+                            typically work 56 hours per week. Using the same
+                            $402 monthly salary:
+                            <ul>
+                                <li>
+                                    Annual salary: $402 \(*\) 12 months = $4,824
+                                </li>
+                                <li>
+                                    Annual hours worked: 56 hours/week \(*\) 52
+                                    weeks/year = 2,912 hours/year
+                                </li>
+                                <li>
+                                    Hourly wage: $4,824 / 2,912 hours = $1.65/hour
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    Note that the hourly wage for indirect hires is even lower
+                    than that of direct hire workers, and these workers are
+                    often subjected to worse conditions, including lack of
+                    healthcare, time off, and other benefits required by
+                    Congolese law. 
+                </p>
                 <p class="indented">
+                    Next, we consider the scale of cobalt production for use in
+                    batteries in the DRC to find the additional cost per
+                    electric cost if we evenly divide the additional money
+                    necessary to pay workers a living wage as calculated above. 
+                    <ol>
+                        <li>
+                            Global Cobalt Supply in 2020:
+                            <ul>
+                                <li>
+                                    The five mines in the study account for
+                                    approximately 45% of the global cobalt
+                                    supply, which is primarily used for
+                                    automotive manufacturing.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Global Supply from DRC:
+                            <ul>
+                                <li>
+                                    74% of the global cobalt supply comes from
+                                    the DRC.
+                                </li>
+                                <li>
+                                    61% of DRC’s cobalt is produced by the five mines discussed in the report.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Cobalt Production and the Five Mines:
+                            <ul>
+                                <li>
+                                    The RAID report indicates that these five
+                                    mines produce 59,502 tonnes (59,502,000 kg)
+                                    of cobalt.
+                                </li>
+                                <li>
+                                    For the entire DRC, we scale this up to reflect the total production:
+                                    \[59502000\;\text{kg} \times \frac{5}{3} = 99170000\;\text{kg}\]
+                                </li>
+                                <li>
+                                    Therefore, 99,170,000 kg of cobalt is produced annually in the DRC.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Cobalt for EV Batteries:
+                            <ul>
+                                <li>
+                                    A typical EV battery uses 14 kg of cobalt [1]
+                                </li>
+                                <li>
+                                    Thus, the total number of EV batteries that could be produced from the cobalt mined in the DRC is:
+                                    \[ \frac{99170000\;\text{kg}}{14\;\text{kg/EV}} = 7085714\;\text{batteries}\]
+                                </li>
+                                <li>
+                                    Rounding, we find that the cobalt mined in the DRC produces 7,000,000 batteries. 
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </p>
+                <p class="indented">
+                    Given this level of production, we now must ask how much we
+                    would have to charge at the EV dealership to pay for the
+                    additional cost of labor to pay all workers a living wage.
+                    <ol>
+                        <li>
+                            Number of Workers:
+                            <ul>
+                                <li>
+                                    There are 22,952 workers at the five mines.
+                                </li>
+                                <li>
+                                    To scale this for all cobalt production in
+                                    the DRC (since the five mines produce 61% of
+                                    the cobalt), the total number of workers
+                                    across all DRC cobalt mining is:
+                                    \[22952 \times \frac{5}{3} = 38253 \text{miners}\quad \text{(approx. 38,000 workers)}\]
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Current vs. Living Wage:
+                            <ul>
+                                <li>
+                                    The current daily wage for miners is about $3/day.
+                                </li>
+                                <li>
+                                    Annually, that amounts to:
+                                    \[3 \, \text{USD/day} \times 5 \, \text{days/week} \times 52 \, \text{weeks/year} = 780 \, \text{USD/year}\]
+                                </li>
+                                <li>
+                                    However, the proposed living wage is $4,824/year.
+                                </li>
+                                <li>
+                                    The gap is:
+                                    \[4,824 \, \text{USD/year} - 780 \, \text{USD/year} = 4,044 \, \text{USD/year}\]
+                                </li>
+                                <li>
+                                    Therefore, each worker needs an additional $4,044 annually.
+                                </li>
+                        </li>
+                        <li>
+                            Total increase in spending for workers:
+                            \[38,000 \, \text{workers} \times 4,044 \, \text{USD} = 154,696,480 \, \text{USD}\]
+                        </li>
+                    </ol>
+                Distributing this cost across the 7,000,000 batteries produced
+                    from cobalt mined in the DRC, we find that the additional
+                    cost per battery would be:
+                    \[ \frac{154,696,480 \, \text{USD}}{7,000,000 \, \text{batteries}} \approx 21.83 \, \text{USD/battery}\]
+                So for an average EV with two batteries, we need to increase the
+                cost of the vehicle by only roughly $44 to pay all mining workers
+                fair wages.
+                </p>
+                <h3>Takeaways from paying a living wage</h3>
+                <p>
+                    To provide a living wage of $4,824/year to all the miners
+                    producing cobalt in the DRC, the total increase in spending
+                    for the workers would be about $154.7 million. While this
+                    seems like a very large sum, given the scale of production
+                    of batteries, this would increase the price of each EV by
+                    approximately $43.67.
+                </p>
+                <p class="indented">
+                    Thus, the cost of ensuring a living wage for miners
+                    producing cobalt in the DRC would have a relatively small
+                    effect on the final price of electric vehicles—only about
+                    $43.67 per car.
+                </p>
+                <h3>Pollution Costs</h3>
+                <p>
                     Mining for batteries also pose a deep threat for the
                     surrounding environment, which in turn affects its
                     inhabitants. Mining raw materials requires harsh chemicals
                     and large amounts of water, often in areas where water is
-                    already scarce. Additionally, heat between 800 and 1,000C is
-                    needed, which requires the burning of fossil fuels.
-                    These harms posed to the water supply and environment hurt
-                    the agricultural industry nearby.  In an article in the
-                    National Library of Medicine, researchers talk to farmers in
-                    the Katangese Copperbelt in Central Africa, noting their
+                    already scarce. We'll start with the carbon cost generated
+                    from the mining process [8].
+                    <ul>
+                        <li>
+                            Research states that the mining of minerals required
+                            for a Tesla Model 3 battery is around 9,2000 kg of
+                            CO2 [8].
+                        </li>
+                        <li>
+                            Multiply by the social cost of carbon in the U.S, 
+                            around $190 per tonne:
+                            \[92000 \text{kg CO2/ battery} \times 0.0478  \text{USD/ kg CO2} = $1747\,\text{per battery}\]
+                        </li>
+                        <li>
+                            Then, for a car with 2 batteries, we get an increase of
+                            $3494 in the cost of the EV.
+                        </li>
+                    </ul>
+                    By comparison, the social cost of carbon incurred in ICE
+                    manufacturing is much lower, at $1064 per vehicle.
+                </p>
+                <p class="indented">
+                    The mining process poses further destruction to the nearby
+                    environment. Miners need to create heat between 800 and
+                    1,000C, which requires the burning of fossil fuels. This
+                    hurts the local water supply and therefore affects the
+                    agricultural industry nearby.  In an article in the National
+                    Library of Medicine, researchers talked to farmers in the
+                    Katangese Copperbelt in Central Africa, noting their
                     struggle to obtain compensation for the costs of nearby
                     mining. In this area, many farmers note the decrease in
                     water quality. Specifically, between 2013 and 2014, they
@@ -116,20 +494,14 @@
                     concerns, however, 88% of the farmers interviewed voiced a
                     need for the depollution of their area. They further state
                     that they would accept, if offered, a compensation of $US
-                    2820 per farmer. 
+                    2820 per farmer [6]. 
                 </p>
                 <p class="indented">
-                    Outside of the human costs of mining cobalt, there are also
-                    associated environmental costs. For example, the Tesla Model
-                    3 holds an 80 kWh lithium-ion battery. Research[?] concludes
-                    that mining the materials for this battery would result in
-                    between 2,400kg and 16,000kg of CO2 emissions. This is
-                    between 1.5 and 1.6 metric tons. For context, one ton of CO2
-                    is about the amount that a typical gas-powered car emits in
-                    about 2,500 miles of driving. Using the social cost of
-                    carbon, which we will explore below in the context of
-                    electricity generation, we can estimate the cost of these
-                    emissions to be around $295.
+                    Granted that 34% of the global cobalt supply is
+                    used for EV battery production [7], and that there are 30,000
+                    farmers in the DRC impacted by mineral mining, then
+                    \[.34 * 2820\,\text{USD} * 300000\,\text{farmers} / 7000000\,\text{batteries} = 41 \,\text{USD/battery}\]
+                    This adds an additional $82 to the cost of each EV.
                 </p>
             </section>
             <section>
@@ -194,9 +566,6 @@
                 <div class="sneaky">
                     <iframe class="p5" src="https://editor.p5js.org/Espeer5/full/EuKv-agj8" frameBorder="0"></iframe>
                 </div>
-                <div class="sneaky2">
-                    <iframe class="p52" src="https://editor.p5js.org/Espeer5/full/IEZo0BBOs"" frameBorder="0"></iframe>
-                </div>
                 <p class="indented">
                     The result of this comparison is clear. EVs are not only 
                     vastly more environmentally friendly than ICE vehicles, but
@@ -214,6 +583,29 @@
                     by EVs, the total cost of carbon emissions monotonically
                     decreases as the mix of vehicles on the roads shifts towards
                     electric.
+                </p>
+                <p class="indented">
+                    Note that this analysis has thus far used average values for
+                    power efficiency and battery mineral content. In reality,
+                    these values are highly variable depending on the make and 
+                    model of the vehicle. To understand and visualize the
+                    imporovement that can be made by switching to electric and
+                    selecting the most efficient options, we created the
+                    following plot which allows you to select any EV model from
+                    model year 2024 and see how the cost of carbon emissions
+                    from that vehicle ramps over time in comparison with the
+                    average ICE.
+                </p>
+                <div class="sneaky2">
+                    <iframe class="p52" src="https://editor.p5js.org/Espeer5/full/IEZo0BBOs"" frameBorder="0"></iframe>
+                </div>
+                <p>
+                    Note that while, due to the hidden carbon cost of mineral
+                    mining, EVs are initially more expensive in carbon price,
+                    the break even point for all vehicles (even the very least
+                    environmentally friendly Hummer pickup EV), the break-even
+                    point is well below the life expectancy of the vehicle. On
+                    average, the break-even value is less than 50,000 miles.
                 </p>
                 <p class="indented">
                     Note that reflecting the true cost of carbon emissions into
@@ -268,15 +660,18 @@
                     replaced with the base price and cost of carbon emissions
                     per mile driven by an ICE vehicle, respectively. Note that
                     \(\bar{C}\) is a dynamic value that would change as the
-                    mixture of energy generation sources in the U.S changes.
+                    mixture of energy generation sources in the U.S changes. On
+                    average, an EV would cost around $63,000, while an ICE
+                    would cost about $64,500 — Note that this makes the EV the
+                    <em>cheaper</em> option to buy at the dealership.
                 </p>
-                <p>TODO: PLOT OF PRICE TO COST WITH LABOR DATA</p>
+                <img src="imgs/interv.png" alt="Price to cost comparison">
                 <p>
                     Notice that this approach has both benefits and
                     disadvantages. The primary benefit of this approach is that
-                    consumers would face string incentives to purchase more
+                    consumers would face strong incentives to purchase more
                     responsible vehicles right up front, hopefully driving the
-                    market towards more sustainable vehicles rapidly when this
+                    market towards more sustainable electric vehicles rapidly when this
                     policy is first implemented. However, the primary
                     disadvantage is that this approach does not account for the
                     ongoing costs of operating the vehicle — some consumers will
@@ -296,9 +691,12 @@
                     would be dynamic for electric vehicles, changing as the
                     energy generation mix in the U.S changes — but static for
                     ICE vehicles, as the environmental impact of burning
-                    gasoline remains stable.
+                    gasoline remains stable. Seeing the plot from aboce, we
+                    can understand this approach as implementing taxes in such a
+                    way that the price of fueling will cause the price line to
+                    follow the same slope as the cost line for vehicles over
+                    time. This would be akin to around 
                 </p>
-                <p>TODO: PLOT SHOWING PRICE TO COST WITH LABOR DATA</p>
                 <p class="indented">
                     This strategy again has a number of benefits and
                     disadvantages. The primary benefit of this approach is that
@@ -317,11 +715,33 @@
                     purchase electric vehicles right up front if they are
                     unaware of the long-term benefit of doing so.
                 </p>
-                <p>TODO: GRAPHIC SHOWING FINAL COMPARISON WITH LABOR DATA</p>
+            </section>
+            <section>
+                <h2>The Upshot</h2>
+                <p>
+                    In conclusion, the true cost of consumer vehicles includes
+                    a number of different features, which may be divided
+                    roughly into two categories: costs incurred in the
+                    production of the vehicle, and costs incurred in the
+                    operation of the vehicle. We have shown that the true cost
+                    of electric vehicles is significantly lower than that of
+                    ICE vehicles even when accounting for the labor costs of cobalt
+                    mining and the environmental costs of carbon emissions.
+                    This analysis has focused only on lightweight passenger
+                    vehicles, but a similar analysis should be extended to heavy
+                    duty vehicles as well as to other types of vehicles - hybrids,
+                    diesel, and hydrogen fuel cell vehicles. We have proposed two
+                    different strategies for charging consumers the true cost of
+                    their transportation choices, one based on a static sticker
+                    price and the other based on a dynamic tax on fueling. Both
+                    show significant promise in incentivizing the purchase of
+                    more sustainable vehicles, and further research should be
+                    conducted to explore the potential impacts of these policies
+                    on consumer behavior and the market for electric vehicles.
             </section>
             <section>
                 <h2>Citations</h2>
-                <ol>
+                <ol id="cites">
                     <li>
                         IEA (2024), Global EV Outlook 2024, IEA, Paris. 
                         <a href=https://www.iea.org/reports/global-ev-outlook-2024>URL</a> 
@@ -338,6 +758,40 @@
                         K. Ricke, L. Drouet, K. Caldeira and M. Tavoni,
                         Country-level Social Cost of Carbon, Nature Climate
                         Change. DOI: 10.1038/s41558-018-0282-y
+                    </li>
+                    <li>
+                        Bureau of International Labor Affairs, Combatting Child
+                        Labor in the Democratic Republic of the Congo's Cobalt
+                        Industry (COTECCO). 
+                        <a href="https://www.dol.gov/agencies/ilab/combatting-child-labor-democratic-republic-congos-cobalt-industry-cotecco">URL</a>
+                    </li>
+                    <li>
+                        Terry Gross, 2023. How 'modern-day slavery' in the Congo
+                        powers the rechargeable battery economy.
+                        <a href="https://www.npr.org/sections/goatsandsoda/2023/02/01/1152893248/red-cobalt-congo-drc-mining-siddharth-kara">URL</a>
+                    </li>
+                    <li>
+                        Balasha AM, Peša I. "They polluted our cropfields and
+                        our rivers, they killed us": Farmers' complaints about
+                        mining pollution in the Katangese Copperbelt. Heliyon.
+                        2023.
+                        <a href="doi: 10.1016/j.heliyon.2023.e14995">DOI</a>
+                    </li>
+                    <li>
+                        UK Parliament, 2021. Written Evidence Submitted by the
+                        Cobalt Institute (MIN0003).
+                        <a href="https://committees.parliament.uk/writtenevidence/117331/pdf/#:~:text=10)%20As%20of%202021%2C%2065,consumer%20electronics%20(31%25)2">URL</a>
+                    </li>
+                    <li>
+                        Iris Crawford 2022. How much CO2 is emitted by manufacturing
+                        batteries? MIT Climate Portal. 
+                        <a href="https://climate.mit.edu/ask-mit/how-much-co2-emitted-manufacturing-batteries">URL</a>
+                    </li>
+                    <li>
+                        RAID and AfreWatch 2024. Beneath the Green: a critical
+                        look at the environmental and human costs of industrial
+                        cobalt mining in DRC.
+                        <a href="https://raid-uk.org/wp-content/uploads/2024/03/Report-Beneath-the-Green-DRC-Pollution-March-2024.pdf">URL</a>
                     </li>
                 </ol>
             </section>
